@@ -1,0 +1,19 @@
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.backToShop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #caf0f8;
+  margin-right:30px;
+  transition: 1s all ease-in-out;
+}
+.backToShop:hover {
+  color: #03045e;
+  
+}

@@ -1,8 +1,13 @@
+import CategoryList from "components/templates/CategoryList";
+import CategoryForm from "components/templates/CategoryForm";
 
 function AdminPage() {
   return (
-    <div>AdminPage</div>
-  )
+    <div>
+      <CategoryList />
+      <CategoryForm />
+    </div>
+  );
 }
 
-export default AdminPage
+export default AdminPage;

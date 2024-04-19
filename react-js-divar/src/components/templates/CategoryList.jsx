@@ -6,7 +6,6 @@ import styles from "./CategoryList.module.css";
 
 function CategoryList() {
   const { data, isLoading } = useQuery(["get-categories"], getCategory);
-  console.log({ data, isLoading });
 
   return (
     <div className={styles.list}>

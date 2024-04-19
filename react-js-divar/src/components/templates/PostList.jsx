@@ -9,7 +9,7 @@ import styles from "./PostList.module.css";
 function PostList() {
   const baseURL = import.meta.env.VITE_BASE_URL;
   const { data, isLoading } = useQuery(["my-post-list"], getPosts);
-
+  
   return (
     <div className={styles.list}>
       {isLoading ? (

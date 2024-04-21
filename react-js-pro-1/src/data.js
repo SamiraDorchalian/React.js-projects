@@ -114,4 +114,75 @@ export const faqs = [
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
   },
+  {
+    id: 5,
+    question: "How often should i exercise?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+  },
+  {
+    id: 6,
+    question: "How often should i exercise?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Diana Ayi",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar1.jpeg"),
+  },
+  {
+    id: 2,
+    name: "Shahnaz Sh",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar2.jpeg"),
+  },
+  {
+    id: 3,
+    name: "Saba Sa",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar3.jpeg"),
+  },
+  {
+    id: 4,
+    name: "Marmary My",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar4.jpeg"),
+  },
+  {
+    id: 5,
+    name: "Nargess Dory",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar5.jpeg"),
+  },
+  {
+    id: 6,
+    name: "Arezoo Aria",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar6.jpeg"),
+  },
+  {
+    id: 7,
+    name: "Samira Dn",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur. Mattis enim ut tellus elementum sagittis.",
+    job: "Student",
+    avatar: require("./images/avatar7.jpeg"),
+  },
 ];

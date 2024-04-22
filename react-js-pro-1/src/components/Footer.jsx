@@ -28,7 +28,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="samiradorchalain1998@gmail.com"
+              href="https://mail.google.com/mail/u/0/#inbox"
               target="_blank"
               rel="noreferrer noopenen"
             >

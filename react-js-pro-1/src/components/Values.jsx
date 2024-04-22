@@ -11,7 +11,7 @@ const Values = () => {
       <div className=".container values__container">
         <div className="values__left">
           <div className="values__image">
-            <img src={Image} alt="Values Image" />
+            <img src={Image} alt="Values Image" style={{ padding: "50px" }} />
           </div>
         </div>
         <div className="values__right">
@@ -20,7 +20,7 @@ const Values = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
             vero esse quo et molestias ratione?
           </p>
-          <div className="values__erapper">
+          <div className="values__wrapper">
             {values.map(({ id, icon, title, desc }) => {
               return (
                 <Card className="values__value" key={id}>

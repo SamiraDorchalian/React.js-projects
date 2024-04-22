@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Image from "../images/main-header.webp";
+import Image from "../images/main-header.png";
 
 const MainHeader = () => {
   return (

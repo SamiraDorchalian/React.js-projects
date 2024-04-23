@@ -252,3 +252,79 @@ export const plans = [
     ],
   },
 ];
+
+const Trainer1 = require("./images/trainer1.jpeg");
+const Trainer2 = require("./images/trainer2.jpeg");
+const Trainer3 = require("./images/trainer3.jpeg");
+const Trainer4 = require("./images/trainer4.jpeg");
+const Trainer5 = require("./images/trainer5.jpeg");
+const Trainer6 = require("./images/trainer6.jpeg");
+
+export const trainers = [
+  {
+    id: 1,
+    image: Trainer1,
+    name: "John Doe",
+    job: "Aerobic Trainer",
+    socials: [
+      "https:/instagram.com",
+      "https:/twitter.com",
+      "https:/linkedin.com",
+    ],
+  },
+  {
+    id: 2,
+    image: Trainer2,
+    name: "Samira Doe",
+    job: "Aerobic Trainer",
+    socials: [
+      "https:/instagram.com",
+      "https:/twitter.com",
+      "https:/linkedin.com",
+    ],
+  },
+  {
+    id: 3,
+    image: Trainer3,
+    name: "Arezoo Doe",
+    job: "Aerobic Trainer",
+    socials: [
+      "https:/instagram.com",
+      "https:/twitter.com",
+      "https:/linkedin.com",
+    ],
+  },
+  {
+    id: 4,
+    image: Trainer4,
+    name: "Nargess Doe",
+    job: "Aerobic Trainer",
+    socials: [
+      "https:/instagram.com",
+      "https:/twitter.com",
+      "https:/linkedin.com",
+    ],
+  },
+  {
+    id: 5,
+    image: Trainer5,
+    name: "Mariam Doe",
+    job: "Aerobic Trainer",
+    socials: [
+      "https:/instagram.com",
+      "https:/twitter.com",
+      "https:/linkedin.com",
+    ],
+  },
+  {
+    id: 6,
+    image: Trainer6,
+    name: "Saba Doe",
+    job: "Aerobic Trainer",
+    socials: [
+      "https:/instagram.com",
+      "https:/twitter.com",
+      "https:/linkedin.com",
+    ],
+  },
+];

@@ -33,7 +33,7 @@ body {
   color: var(--color-geay-200);
   line-height: 1.7;
   overflow-x: hidden;
-  background: var(--color-geay-600);
+  background: var(--color-geay-600) ;
 }
 .container {
   width: var(--container-width-lg);

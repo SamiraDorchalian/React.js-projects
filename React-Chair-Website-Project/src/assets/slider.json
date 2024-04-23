@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Workspace Chair",
+    "subtitle": "Indoor Chair",
+    "icon": "+",
+    "image": "./chair1.png"
+  },
+  {
+    "title": "Ultrabar Chair",
+    "subtitle": "Indoor Chair",
+    "icon": "+",
+    "image": "./chair2.png"
+  },
+  {
+    "title": "Mimimakist Chair",
+    "subtitle": "Indoor Chair",
+    "icon": "+",
+    "image": "./chair3.png"
+  },
+  {
+    "title": "Workspace Chair",
+    "subtitle": "Indoor Chair",
+    "icon": "+",
+    "image": "./chair1.png"
+  }
+]

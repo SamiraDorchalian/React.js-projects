@@ -1,0 +1,63 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600;700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* Fonts */
+  --font-family-1: "Calistoga", cursive;
+  --font-family-2: "Poppins", sans-serif;
+  /* Colors */
+  --white: #fff;
+  --orange: #ff7411;
+  --main-color: #532e28;
+  --text-color: #d5b4a4;
+  --bg-color: #fff;
+  --container-color: #fff7ea;
+  --container-alter: #f4e4bc;
+  --gradient: linear-gradient(to right top, #ffb84a, #ff7411);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: var(--font-family-2);
+}
+body {
+  background: #fffcf7;
+  color: var(--text-color);
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1060px;
+  width: 100%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding: 3rem 0 2rem;
+}
+.btn {
+  background: var(--gradient);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 2rem;
+  border: 4px solid #ffdda2;
+}
+.gradient-text {
+  font-family: var(--font-family-1);
+  background: linear-gradient(to right top, #ffb84a, #ff7411);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media (max-width: 1070px) {
+  .container {
+    margin: 0 auto;
+    width: 92%;
+  }
+}

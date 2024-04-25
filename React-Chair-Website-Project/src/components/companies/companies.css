@@ -1,0 +1,26 @@
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.companies img {
+  width: 160px;
+}
+@media (max-width: 884px) {
+  .companies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    justify-content: space-betweens;
+    gap: 0.5rem;
+  }
+  .companies img {
+    width: 120px;
+  }
+}
+@media (max-width: 370px) {
+  .companies {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

@@ -20,12 +20,20 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: 3rem;
   font-family: var(--font-family-2);
 }
 body {
   background: #fffcf7;
   color: var(--text-color);
+}
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5px;
 }
 img {
   width: 100%;

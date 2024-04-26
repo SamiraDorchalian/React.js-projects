@@ -1,12 +1,11 @@
-import React from "react";
 import "./chair.css";
-import SwiperCore, { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import SwiperCore, { Navigation } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 import Chairdata from "../../assets/slider.json";
-SwiperCore.use([Navigation]);
+// SwiperCore.use([Navigation]);
 
 const Chair = () => {
   return (
@@ -16,7 +15,7 @@ const Chair = () => {
           Shop <span className="gradient-text">Popular</span> <br /> Categories
         </h2>
         <div className="chair-content">
-          <Swiper
+          {/* <Swiper
             navigation
             spaceBetween={15}
             slidesPerView={1}
@@ -31,9 +30,11 @@ const Chair = () => {
                 slidesPerView: 3,
               },
             }}
-          >
+          > */}
+          <div>
             {Chairdata.map((item, index) => (
-              <SwiperSlide key={index}>
+              // <SwiperSlide key={index}>
+              <div key={index}>
                 <div className="chair-box">
                   <div className="box-img">
                     <img src={item.image} alt={item.title} />
@@ -42,9 +43,11 @@ const Chair = () => {
                   <h3 className="box-title">{item.title}</h3>
                   <p>{item.subtitle}</p>
                 </div>
-              </SwiperSlide>
+              </div>
+              // </SwiperSlide>
             ))}
-          </Swiper>
+          </div>
+          {/* </Swiper> */}
         </div>
       </section>
     </div>

@@ -1,0 +1,81 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.about .heading {
+  text-align: left;
+  font-family: var(--font-family-1);
+  color: var(--main-color);
+  font-size: 3.5rem;
+}
+.about-img img {
+  max-width: 440px;
+  width: 100%;
+}
+.about-data p {
+  font-size: 0.938rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+.about-box-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.about-box {
+  background: var(--container-color);
+  padding: 15px;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  transition: 0.4s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about-box:hover {
+  background: var(--white);
+  box-shadow: 0 20px 21px -40px hsl(36, 100%, 656%, 0.1);
+  transition: 0.4s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about-box:hover .box-title {
+  background: linear-gradient(to right top, #ffb84a, #ff7411);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.4s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about-box-data .about-box .about-icon svg {
+  font-size: 3rem;
+  color: var(--white);
+  background: var(--gradient);
+  padding: 10px;
+  border-radius: 5px;
+}
+.about-box-data .about-box .about-icon {
+  display: flex;
+  margin: -2.5rem 0 1rem 1rem;
+}
+.about-box-data .box-title {
+  font-family: var(--font-family-1);
+  text-align: left;
+  margin-top: 0;
+}
+.about-box-data p {
+  font-size: 0.938rem;
+  text-align: initial;
+}
+@media (max-width: 884px) {
+  .about {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .about-img {
+    order: 2;
+  }
+}
+@media (max-width: 400px) {
+  .about-box-data {
+    grid-template-columns: 1fr;
+  }
+  .box-title {
+    font-size: 1.4rem;
+  }
+}

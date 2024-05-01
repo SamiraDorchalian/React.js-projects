@@ -20,8 +20,8 @@ function App() {
       <Testimonials />
       <FAQs />
       <Contact />
-      <Footer />
       <FloatingNav />
+      <Footer />
     </main>
   );
 }

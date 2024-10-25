@@ -3,22 +3,21 @@
   text-align: center;
 }
 .container h1 {
-  color: #ff8fa3;
+  color: #304ffe;
   margin-bottom: 20px;
 }
 .container p {
-  color: #ffb3c1;
+  color: gray;
 }
 .container a {
   text-decoration: none;
-  color: #ff8fa3;
-  background-color: #ffccd5;
+  color: #304ffe;
+  background-color: #bbdefb;
   padding: 3px 5px;
   border-radius: 5px;
-  margin-right: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .container a:hover {
-  color: #ffccd5;
-  background-color: #ff8fa3;
+  color: #bbdefb;
+  background-color: #304ffe;
 }

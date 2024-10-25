@@ -5,10 +5,8 @@ function Header() {
     <div className={styles.container}>
       <h1>Contact App</h1>
       <p>
-        <a href="www.linkedin.com/in/samira-dorchalian-a61789219">
-          My Llinkedin
-        </a>
-        | React.js
+        <a href="https://github.com/SamiraDorchalian"> GitGub </a> | React.js
+        Project-App
       </p>
     </div>
   );

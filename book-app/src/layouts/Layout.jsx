@@ -6,14 +6,13 @@ function Layout({ children }) {
       <header className={styles.header}>
         <h1>Book App</h1>
         <p>
-          <a href="https://github.com/SamiraDorchalian/React.js-projects">
-            React.js | Projects
-          </a>
+          <a href="https://github.com/SamiraDorchalian">GitHub</a> | React.js
+          Project
         </p>
       </header>
       {children}
       <footer className={styles.footer}>
-        <p>Developed by Samira with : ☕🍪</p>
+        <p>Developed by samira with ☕🍪</p>
       </footer>
     </>
   );

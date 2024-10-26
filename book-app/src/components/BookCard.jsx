@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { BiSolidBookHeart } from "react-icons/bi";
+import { FaHeart } from "react-icons/fa";
 
 import styles from "./BookCard.module.css";
 
-function BookCard({ data, handleLikesList }) {
+function BookCard({ data, handeLikeedList }) {
   const { title, author, image, language, pages } = data;
 
   const [like, setLike] = useState(false);
 
   const likeHandler = () => {
-    handleLikesList(data, like);
+    handeLikeedList(data, like);
     setLike((like) => !like);
   };
 
@@ -25,10 +25,7 @@ function BookCard({ data, handleLikesList }) {
         </div>
       </div>
       <button onClick={likeHandler}>
-        <BiSolidBookHeart
-          color={like ? "#9d0208" : "#faa307"}
-          fontSize="1.8rem"
-        />
+        <FaHeart color={like ? "red" : "#e0e0e0"} fontSize="1.8rem" />
       </button>
     </div>
   );

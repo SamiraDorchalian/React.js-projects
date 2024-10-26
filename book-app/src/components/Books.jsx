@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BiSolidBookHeart } from "react-icons/bi";
 
 import { books as bookData } from "../constants/mockData";
 import BookCard from "./BookCard";
@@ -13,7 +12,9 @@ function Books() {
   const [liked, setLiked] = useState([]);
   const [search, setSearch] = useState([]);
 
-  const handleLikesList = (book, status) => {
+  const handeLikeedList = (book, status) => {
+    console.log({ book, status });
+
     if (status) {
       const newLikedList = liked.filter((i) => i.id !== book.id);
       setLiked(newLikedList);
@@ -21,6 +22,7 @@ function Books() {
       setLiked((liked) => [...liked, book]);
     }
   };
+
   const searchHandler = () => {
     if (search) {
       const newBooks = bookData.filter((book) =>
@@ -39,21 +41,19 @@ function Books() {
         setSearch={setSearch}
         searchHandler={searchHandler}
       />
-      <div className={styles.container}>
+      <div className={styles.conatiner}>
         <div className={styles.cards}>
           {books.map((book) => (
             <BookCard
               key={book.id}
               data={book}
-              handleLikesList={handleLikesList}
+              handeLikeedList={handeLikeedList}
             />
           ))}
         </div>
         {!!liked.length && (
           <div className={styles.favorite}>
-            <h4>
-              Favorites <BiSolidBookHeart color="#9d0208" />
-            </h4>
+            <h4>Favorites</h4>
             {liked.map((book) => (
               <SideCard key={book.id} data={book} />
             ))}

@@ -7,10 +7,9 @@
   border: none;
   border-radius: 5px;
   padding: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 1rem;
-  color: #faa307;
-  background-color: #dc2f02;
+  background-color: #e0e0e0;
 }
 .search input:focus {
   outline: none;
@@ -21,6 +20,7 @@
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
-  background-color: #dc2f02;
+  background-color: #6552f4;
+  color: #e0e0e0;
   cursor: pointer;
 }

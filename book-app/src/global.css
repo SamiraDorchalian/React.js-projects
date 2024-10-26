@@ -7,8 +7,8 @@ body {
   max-width: 1000px;
   min-height: 100vh;
   padding: 10px;
-  background-color: #52260b;
-  color: #f48c06;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 * {
   padding: 0;

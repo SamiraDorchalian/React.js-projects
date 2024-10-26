@@ -1,4 +1,4 @@
-import { GiArchiveResearch } from "react-icons/gi";
+import { TbMessage2Search } from "react-icons/tb";
 
 import styles from "./SearchBox.module.css";
 
@@ -7,12 +7,12 @@ function SearchBox({ search, setSearch, searchHandler }) {
     <div className={styles.search}>
       <input
         type="text"
-        placeholder="Search Title"
+        placeholder="search title"
         value={search}
-        onChange={(e) => setSearch(e.target.value.toLowerCase())}
+        onChange={(e) => setSearch(e.target.value.toLowerCase().trim())}
       />
       <button onClick={searchHandler}>
-        <GiArchiveResearch color="#faa307" />
+        <TbMessage2Search />
       </button>
     </div>
   );

@@ -62,7 +62,7 @@ function Search({ currency, setCurrency }) {
         <div className={styles.searchResult}>
           <ul>
             {isLoading && (
-              <RotatingLines
+              <RotatingLinesb
                 width="50px"
                 height="50px"
                 strokeWidth="2"

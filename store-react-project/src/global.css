@@ -7,7 +7,7 @@ body {
   max-width: 1200px;
   min-height: 100vh;
   padding: 10px;
-  background-color: rgba(5, 48, 6, 0.945);
+  background-color: #f9fafc;
 }
 * {
   padding: 0;

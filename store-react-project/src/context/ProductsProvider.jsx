@@ -28,6 +28,12 @@ const useProducts = () => {
   const products = useContext(ProductsContext);
   return products;
 };
-export default ProductsProvider;
 
-export { useProducts };
+const useProductsDetails = (id) => {
+  const products = useContext(ProductsContext);
+  const result = products.find((product) => product.id === id);
+  return result;
+};
+
+export default ProductsProvider;
+export { useProducts, useProductsDetails };

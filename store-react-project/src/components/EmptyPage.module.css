@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 50px;
+}
+.container p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fe5d42;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  margin-right: 100px;
+  border: 2px dashed #fe5d42;
+  border-radius: 20px;
+}
+.container p:hover {
+  background: #f7753d49;
+}
+.container img {
+  padding: 20px;
+  margin: 50px;
+  margin-left: 100px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #fe5d42 inset;
+}
+
+.container img:hover {
+  box-shadow: 5px 5px 5px #fe5d42;
+}

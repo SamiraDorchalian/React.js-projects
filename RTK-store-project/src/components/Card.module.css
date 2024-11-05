@@ -6,24 +6,23 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  background-color: #caf0f8;
-  border: 2px dashed #03045e;
+  background-color: #fff;
+  border: 2px dashed #e2e2e2;
   border-radius: 20px;
 }
 .card img {
-  width: 230px;
+  width: 230px !important;
   height: 230px;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #0096c7;
-  border-radius: 20px;
+  background-color: #fff;
 }
 .card h3 {
-  color: #03045e;
+  color: #fe5d42;
   font-size: 1.1rem;
 }
 .card p {
-  color: #0096c7;
+  color: #666;
   font-size: 0.9rem;
   font-weight: 600;
   margin: 10px 0 30px;
@@ -37,7 +36,7 @@
 .actions a {
   font-size: 1.5rem;
   height: 25px;
-  color: #03045e;
+  color: #fe5d42;
   cursor: pointer;
 }
 .actions div {
@@ -48,11 +47,10 @@
   width: 20px;
   text-align: center;
   margin: 0 10px;
-  color: #03045e;
 }
 .actions div button {
-  background-color: #0096c7;
-  color: #03045e;
+  background-color: #fe5d42;
+  color: #fff;
   border: none;
   font-size: 1.7rem;
   height: 32px;

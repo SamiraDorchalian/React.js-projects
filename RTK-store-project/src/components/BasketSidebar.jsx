@@ -1,15 +1,10 @@
-import { useDispatch } from "react-redux";
-
 import { TbChecklist } from "react-icons/tb";
-import { FaHashtag } from "react-icons/fa6";
+import { FaHashtag } from "react-icons/fa";
 import { BsPatchCheck } from "react-icons/bs";
-
-import { checkout } from "../features/cart/cartSlice";
 
 import styles from "./BasketSidebar.module.css";
 
-function BasketSidebar({ state }) {
-  const dispatch = useDispatch();
+function BasketSidebar({ state, clickHandler }) {
   return (
     <div className={styles.sidebar}>
       <div>
@@ -27,7 +22,7 @@ function BasketSidebar({ state }) {
         <p>Status:</p>
         <span>{!state.checkout && "Pending ..."}</span>
       </div>
-      <button onClick={() => dispatch(checkout())}>Checkout</button>
+      <button onClick={() => clickHandler("CHECKOUT")}>CheckOut</button>
     </div>
   );
 }

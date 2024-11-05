@@ -1,30 +1,32 @@
-.empty {
+.container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-weight: 700;
-  color: #03045e;
+  text-align: center;
+  margin: 0 50px;
 }
-.empty p {
-  padding: 15px;
-  margin: 15px;
+.container p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fe5d42;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  margin-right: 100px;
+  border: 2px dashed #fe5d42;
+  border-radius: 20px;
 }
-.empty p span {
-  color: #03045e;
-  background-color: #caf0f8;
-  border-radius: 50px;
-  font-size: 20px;
+.container p:hover {
+  background: #f7753d49;
 }
-.empty span {
-  width: 50px;
-  height: 50px;
-  font-size: 50px;
-  padding: 5px;
-  transition: all 0.5s ease-in-out;
+.container img {
+  padding: 20px;
+  margin: 50px;
+  margin-left: 100px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #fe5d42 inset;
 }
-.empty span:hover {
-  color: #caf0f8;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
+
+.container img:hover {
+  box-shadow: 5px 5px 5px #fe5d42;
 }

@@ -1,20 +1,20 @@
-import { GiEmptyMetalBucketHandle } from "react-icons/gi";
+import { Link } from "react-router-dom";
+
+import image from "../images/empty.png";
 
 import styles from "./EmptyPage.module.css";
-import { Link } from "react-router-dom";
 
 function EmptyPage() {
   return (
-    <div className={styles.empty}>
-      <p>
-        Your shopping cart is empty <span>╰（‵□′）╯</span> Please skip as soon
-        as possible . Thank you <span> ￣へ￣</span>
-      </p>
-      <span>
+    <div className={styles.container}>
+      <div>
         <Link to="/products">
-          <GiEmptyMetalBucketHandle />
+          <p>Your Basket is Empty</p>
         </Link>
-      </span>
+      </div>
+      <div>
+        <img src={image} alt="image" />
+      </div>
     </div>
   );
 }

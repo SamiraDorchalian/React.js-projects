@@ -1,5 +1,9 @@
-import { useContext, useReducer, createContext } from "react";
+import { useContext, useReducer } from "react";
+import { createContext } from "react";
+
 import { sumProducts } from "../helpers/helper";
+
+const CartContext = createContext();
 
 const initialState = {
   selectedItems: [],
@@ -7,8 +11,6 @@ const initialState = {
   total: 0,
   checkout: false,
 };
-
-const CartContext = createContext();
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -21,6 +23,7 @@ const reducer = (state, action) => {
         ...sumProducts(state.selectedItems),
         checkout: false,
       };
+
     case "REMOVE_ITEM":
       const newSelectedItems = state.selectedItems.filter(
         (item) => item.id !== action.payload.id
@@ -29,13 +32,13 @@ const reducer = (state, action) => {
         ...state,
         selectedItems: [...newSelectedItems],
         ...sumProducts(newSelectedItems),
-        checkout: false,
       };
+
     case "INCREASE":
-      const increaseIndex = state.selectedItems.findIndex(
+      const IncreaseIndex = state.selectedItems.findIndex(
         (item) => item.id === action.payload.id
       );
-      state.selectedItems[increaseIndex].quantity++;
+      state.selectedItems[IncreaseIndex].quantity++;
       return {
         ...state,
         ...sumProducts(state.selectedItems),

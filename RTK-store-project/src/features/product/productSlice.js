@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import api from "../../services/config";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import api from "./../../services/config";
 
 const initialState = {
   loading: false,
@@ -32,4 +32,5 @@ const productsSlice = createSlice({
 });
 
 export default productsSlice.reducer;
+
 export { fetchProducts };

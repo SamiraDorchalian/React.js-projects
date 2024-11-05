@@ -1,54 +1,54 @@
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
 
-import { CgDetailsMore } from "react-icons/cg";
-import { FaCartShopping } from "react-icons/fa6";
-import { MdRemoveShoppingCart } from "react-icons/md";
+import { TbListDetails, TbShoppingBagCheck } from "react-icons/tb";
+import { MdDeleteOutline } from "react-icons/md";
 
-import {
-  removeItem,
-  decrease,
-  increase,
-  checkout,
-  addItem,
-} from "../features/cart/cartSlice";
 import { productQuantity, shortenText } from "../helpers/helper";
+// import { useCart } from "../context/CartContext";
 
 import styles from "./Card.module.css";
 
 function Card({ data }) {
   const { id, title, image, price } = data;
 
-  const state = useSelector((store) => store.cart);
-  const dispatch = useDispatch();
+  // const [state, dispatch] = useCart();
 
-  const quantity = productQuantity(state, id);
+
+  // const quantity = productQuantity(state, id);
+  const quantity = 0;
+
+  const clickHandler = (type) => {
+    // dispatch({ type, payload: data });
+  };
 
   return (
     <div className={styles.card}>
-      <img src={image} alt={title} />
+      <img src={image} alt={title} style={{ width: "150px" }} />
       <h3>{shortenText(title)}</h3>
       <p>{price} $</p>
       <div className={styles.actions}>
         <Link to={`/products/${id}`}>
-          <CgDetailsMore />
+          <TbListDetails />
         </Link>
         <div>
           {quantity === 1 && (
-            <button onClick={() => dispatch(removeItem(data))}>
-              <MdRemoveShoppingCart />
+            <button onClick={() => clickHandler("REMOVE_ITEM")}>
+              <MdDeleteOutline />
             </button>
           )}
+
           {quantity > 1 && (
-            <button onClick={() => dispatch(decrease(data))}>-</button>
+            <button onClick={() => clickHandler("DECREASE")}>-</button>
           )}
+
           {!!quantity && <span>{quantity}</span>}
+
           {quantity === 0 ? (
-            <button onClick={() => dispatch(addItem(data))}>
-              <FaCartShopping />
+            <button onClick={() => clickHandler("ADD_ITEM")}>
+              <TbShoppingBagCheck />
             </button>
           ) : (
-            <button onClick={() => dispatch(increase(data))}>+</button>
+            <button onClick={() => clickHandler("INCREASE")}>+</button>
           )}
         </div>
       </div>

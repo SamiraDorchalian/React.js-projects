@@ -2,23 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #caf0f8;
-  color: #03045e;
+  background-color: #fe5d42;
+  color: #fff;
   padding: 10px 20px;
   margin: 0 10px 60px;
   border-radius: 10px;
 }
+
 .header a {
   font-size: 1.5rem;
   font-weight: 600;
 }
 .header div {
   font-size: 1.6rem;
-  background-color: #03045e;
+  background-color: #fff;
   text-align: center;
-  color: #caf0f8;
+  color: #fe5d42;
   height: 35px;
-  width: 35px;
+  width: 36px;
   border-radius: 9px;
   padding: 2px;
   position: relative;
@@ -28,8 +29,8 @@
   width: 20px;
   height: 20px;
   line-height: 20px;
-  background-color: #03045e;
-  color: #caf0f8;
+  background-color: #000;
+  color: #fff;
   border-radius: 50%;
   position: absolute;
   top: -10px;
@@ -37,13 +38,10 @@
 }
 .footer {
   text-align: center;
-  background-color: #caf0f8;
-  color: #03045e;
+  background-color: #fe5d42;
   padding: 20px;
   margin: 10px;
   margin-top: 80px;
   border-radius: 10px;
-}
-.footer p {
-  font-weight: 700;
+  color: #fff;
 }

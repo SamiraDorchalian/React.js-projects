@@ -1,25 +1,35 @@
-import { useSelector, useDispatch } from "react-redux";
-
 import BasketCard from "../components/BasketCard";
-import EmptyPage from "../components/EmptyPage";
 import BasketSidebar from "../components/BasketSidebar";
+import EmptyPage from "../components/EmptyPage";
+// import { useCart } from "../context/CartContext";
 
 import styles from "./CheckOutPage.module.css";
 
 function CheckOutPage() {
-  const state = useSelector((store) => store.cart);
+  // const [state, dispatch] = useCart();
 
-  if (!state.itemsCounter) {
-    return <EmptyPage />;
-  }
+  // const clickHandler = (type, payload) => dispatch({ type, payload });
+
+  // if (!state.itemsCounter) {
+  //   return (
+  //     <div className={styles.container}>
+  //       <EmptyPage />
+  //     </div>
+  //   );
+  // }
+
   return (
     <div className={styles.container}>
-      <BasketSidebar state={state} />
+      {/* <BasketSidebar state={state} clickHandler={clickHandler} />
       <div className={styles.products}>
         {state.selectedItems.map((product) => (
-          <BasketCard key={product.id} data={product} />
+          <BasketCard
+            key={product.id}
+            data={product}
+            clickHandler={clickHandler}
+          />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

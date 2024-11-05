@@ -4,9 +4,10 @@ import Layout from "./layout/Layout";
 import ProductsPage from "./pages/ProductsPage";
 import DetailsPage from "./pages/DetailsPage";
 import CheckOutPage from "./pages/CheckOutPage";
-import PageNotFound from "./pages/404";
+
 // import ProductsProvider from "./context/ProductsProvider";
 // import CartProvider from "./context/CartContext";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
     // <ProductsProvider>
     <Layout>
       <Routes>
-        <Route index element={<Navigate to="/products" replace />} />
+        <Route path="/" element={<Navigate to="/products" replace />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<DetailsPage />} />
         <Route path="/checkout" element={<CheckOutPage />} />
@@ -22,7 +23,7 @@ function App() {
       </Routes>
     </Layout>
     // </ProductsProvider>
-    //</CartProvider>
+    // </CartProvider>
   );
 }
 

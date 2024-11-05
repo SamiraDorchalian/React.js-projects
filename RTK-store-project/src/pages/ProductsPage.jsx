@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
+import { fetchProducts } from "../features/product/productSlice";
+
 import {
   filterProducts,
   getInitialQuery,
@@ -10,11 +12,10 @@ import {
 
 import Card from "../components/Card";
 import Loader from "./../components/Loader";
-import { fetchProducts } from "../features/product/productSlice";
-
-import styles from "./ProductsPage.module.css";
 import SearchBox from "../components/SearchBox";
 import Sidebar from "../components/Sidebar";
+
+import styles from "./ProductsPage.module.css";
 
 function ProductsPage() {
   const dispatch = useDispatch();

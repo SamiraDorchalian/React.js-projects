@@ -1,21 +1,15 @@
-// import Header from "./component/layout/Header";
-
-import {gql ,useQuery} from "@apollo/client";
-
-const QUERY=gql`
-  query{
-    authors{
-      name
-    }
-  }
-`;
+import React from "react";
+import Layout from "./component/layout/Layout";
+import HomePage from "./component/home/HomePage";
 
 function App() {
-
-  const {loading, data}= useQuery(QUERY);
-  console.log(data);
-
-  return <h1>App</h1>;
+  return (
+    <>
+      <Layout>
+        <HomePage />
+      </Layout>
+    </>
+  );
 }
 
 export default App;

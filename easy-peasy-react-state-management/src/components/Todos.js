@@ -1,11 +1,16 @@
-import React from "react";
-import { useStoreState } from "easy-peasy";
+import React, { useEffect } from "react";
+import { useStoreActions, useStoreState } from "easy-peasy";
 import TodoItem from "./TodoItem";
 
 const Todos = () => {
   const todos = useStoreState((state) => state.todos);
+  const fetchTodos = useStoreActions((actions) => actions.fetchTodos);
 
-  console.log(todos);
+  useEffect(() => {
+    fetchTodos();
+
+    //eslint-disable-next-line
+  }, []);
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { action } from "easy-peasy";
+import { v4 as uuidv4 } from "uuid";
 
 export default {
   //state
@@ -9,6 +10,10 @@ export default {
   ],
 
   //Action
+  add: action((state, todo) => {
+    todo.id = uuidv4();
+    state.todos = [...state.todos, todo];
+  }),
   toggle: action((state, id) => {
     state.todos.map((todo) => {
       if (todo.id === id) {

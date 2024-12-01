@@ -1,10 +1,11 @@
 import Header from "./components/Header/Header";
-import "./style.css";
+import Hero from "./components/Hero/HeroSlider";
 
 function App() {
   return (
     <>
       <Header />
+      <Hero />
     </>
   );
 }

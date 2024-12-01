@@ -201,6 +201,30 @@ img {
 .ml-3 {
   margin-left: 3rem;
 }
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mt-6 {
+  margin-top: 6rem;
+}
 .p-0 {
   padding: 0;
 }
@@ -236,6 +260,18 @@ img {
 }
 .pl-2 {
   padding-left: 2rem;
+}
+.pl-3 {
+  padding-left: 3rem;
+}
+.pl-4 {
+  padding-left: 4rem;
+}
+.pl-5 {
+  padding-left: 5rem;
+}
+.pl-6 {
+  padding-left: 6rem;
 }
 .pr-1 {
   padding-right: 1rem;

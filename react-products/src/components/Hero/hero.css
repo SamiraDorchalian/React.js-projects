@@ -1,0 +1,47 @@
+.slider-item {
+  color: white;
+}
+.slider-heading {
+  font-size: 50px;
+  width: 300px;
+  font-weight: 500;
+}
+.slider-item p {
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+.slider_btn {
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: bolder;
+  color: white;
+}
+.slider_btn:hover {
+  background-color: #000;
+  color: white;
+  border: none;
+  transition: all ease-in-out 0.4s;
+}
+.text-col {
+  width: 40%;
+}
+.col-2 {
+  width: 50%;
+}
+@media only screen and (max-width: 992px) {
+  .col-1 .d-flex {
+    flex-direction: column;
+  }
+  .text-col {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .slider-heading {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+}

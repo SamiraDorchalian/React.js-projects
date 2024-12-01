@@ -1,0 +1,81 @@
+.client_section {
+  background-color: #313232;
+}
+.layout_padding {
+  padding: 75px 0;
+}
+.heading_content {
+  color: white;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.client-box {
+  background-color: #f6f1ed;
+  padding: 25px;
+  color: #313232;
+}
+.client_id-box .client_img-box {
+  width: 75px;
+  height: 75px;
+  background-color: #313232;
+  padding: 0 10px;
+}
+.client_id-box .client_img-box img {
+  height: 100%;
+}
+.client_id-box h4 {
+  margin: 0;
+  margin-left: 25px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.client-detail {
+  margin: 35px 0 50px 0;
+}
+.client-detail > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+.item_container {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 25px;
+  margin-top: 100px;
+}
+.item_container img {
+  width: 100%;
+}
+.item_container .row {
+  align-items: center;
+}
+.item_img-box {
+  padding: 35px 35px 35px 0;
+}
+.item_img-box img {
+  width: 85%;
+}
+.item_container h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.item_container p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.item_container a {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #ff47d9;
+  color: #fefeff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}

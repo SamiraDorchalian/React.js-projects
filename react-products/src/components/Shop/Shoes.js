@@ -16,14 +16,17 @@ export const Shoes = () => {
                   <div className="find_container mt-2 mb-2" key={elem.id}>
                     <div className="row align-center">
                       <div className="col col-sm-6">
-                        <div className="find_container-img">
-                          <img src={elem.findImg} alt="image" />
+                        <h3>{elem.title1}</h3>
+                        <p>{elem.title2}</p>
+                        <div>
+                          <a href="#">View More</a>
                         </div>
                       </div>
 
                       <div className="col col-sm-6">
-                        <h3>{elem.title1}</h3>
-                        <p>{elem.title2}</p>
+                        <div className="find_container-img">
+                          <img src={elem.findImg} alt="image" />
+                        </div>
                       </div>
                     </div>
                   </div>

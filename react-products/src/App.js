@@ -1,4 +1,5 @@
 import CareBaby from "./components/CareBaby/CareBaby";
+import Client from "./components/Client/Client";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/HeroSlider";
 import { Products } from "./components/Products/Products";
@@ -14,6 +15,7 @@ function App() {
       <Products />
       <Shop />
       <Shoes />
+      <Client />
     </>
   );
 }

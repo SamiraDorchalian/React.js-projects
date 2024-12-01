@@ -12,12 +12,12 @@ const CareBaby = () => {
       <section className="detail_section pt-4">
         <div className="container_fluid">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col col-lg-3">
               <div className="detail_img-box">
                 <img src={detailImage} alt="imageDetail" />
               </div>
             </div>
-            <div className="col-lg-7">
+            <div className="col col-lg-7">
               <div className="detail-container d-flex">
                 {Item.map((curElem) => {
                   return (

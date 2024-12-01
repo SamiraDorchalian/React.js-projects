@@ -1,0 +1,36 @@
+.find_section:first-child img {
+  width: 100%;
+}
+.find_section:last-child img {
+  width: 85%;
+}
+.find_section p {
+  color: #e12121;
+  margin: 0;
+  font-size: 22px !important;
+}
+.find_container {
+  background-color: #f3f3f3;
+}
+.find_container-img:first-child {
+  padding: 35px 0 35px 40px;
+}
+.find_container-img:last-child {
+  padding: 35px 35px 35px 0px;
+}
+.find_container-img:first-child h3 {
+  font-size: 32px !important;
+  font-weight: 400;
+}
+.find_container-img:last-child h3 {
+  font-size: 26px !important;
+  font-weight: 400;
+}
+.find_container:last-child a {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #ff47d9;
+  color: #fefeff;
+  margin-top: 10px;
+  font-size: 16px;
+}

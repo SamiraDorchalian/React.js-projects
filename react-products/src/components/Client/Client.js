@@ -4,13 +4,14 @@ import Slider from "react-slick";
 import { useState } from "react";
 import clientList from "./Client.jsx";
 import "./Client.css";
-import ImageProducts from "../../images/images.jpeg";
+import ImageProducts from "../../images/makeup.png";
 
 const Client = () => {
   const settings = {
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
   };
 

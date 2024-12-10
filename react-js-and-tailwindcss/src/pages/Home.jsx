@@ -4,12 +4,21 @@ import { FaGraduationCap, FaUser, FaBookReader } from "react-icons/fa";
 
 import homeImage from "../components/assets/images/home.png";
 import About from "./About";
+import Courses from "./Courses";
+import Instructor from "./Instructor";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
     <div>
       <HomeContact />
       <About />
+      <br />
+      <br />
+      <br />
+      <Courses />
+      <Instructor />
+      <Blog />
     </div>
   );
 };

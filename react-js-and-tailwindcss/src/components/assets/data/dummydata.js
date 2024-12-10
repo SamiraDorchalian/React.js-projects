@@ -1,9 +1,9 @@
 export const linkData = [
-  { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "About", url: "/about" },
-  { id: 3, title: "Courses", url: "/courses" },
-  { id: 4, title: "Instructor", url: "/instructor" },
-  { id: 5, title: "Blog", url: "/blog" },
+  { id: 1, title: "Home", url: "./" },
+  { id: 2, title: "About", url: "./about" },
+  { id: 3, title: "Courses", url: "./courses" },
+  { id: 4, title: "Instructor", url: "./instructor" },
+  { id: 5, title: "Blog", url: "./blog" },
 ];
 
 export const courses = [

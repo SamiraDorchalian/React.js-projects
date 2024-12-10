@@ -1,8 +1,5 @@
-
 const Instructor = () => {
-  return (
-    <div>Instructor</div>
-  )
-}
+  return <div>Instructor</div>;
+};
 
-export default Instructor
+export default Instructor;

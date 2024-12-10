@@ -5,6 +5,7 @@ import { BiShoppingBag } from "react-icons/bi";
 import { linkData } from "./../assets/data/dummydata";
 const Header = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <>
       <header className="bg-white py-4 text-black sticky z-50 shadow-md top-0 left-0 w-full">

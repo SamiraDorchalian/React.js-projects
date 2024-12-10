@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HiOutlineMenuAlt1, HiViewGrid } from "react-icons/hi";
 import { BiShoppingBag } from "react-icons/bi";
 import { linkData } from "./../assets/data/dummydata";
+
 const Header = () => {
   const [open, setOpen] = useState(false);
 

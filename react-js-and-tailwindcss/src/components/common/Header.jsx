@@ -22,7 +22,7 @@ const Header = () => {
           <nav className={open ? "mobile-veiw" : "desktop-view"}>
             <ul className="flex items-center gap-6">
               {linkData.map((link, index) => (
-                <li key={index} onClick={() => setOpen(null)}>
+                <li key={link.id} onClick={() => setOpen(null)}>
                   <NavLink
                     className={({ isActive }) =>
                       isActive ? "text-primary text-sm" : "text-[15px]"

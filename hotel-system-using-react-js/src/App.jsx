@@ -13,6 +13,11 @@ import ContactPage from "./pages/ContactPage";
 import RoomPage from "./pages/RoomPage";
 import Services from "./pages/Services";
 
+import "./css/style.css";
+import "./css/bootstrap.min.css";
+import "./css/animate.css";
+import "./css/animate.min.css";
+
 export default function App() {
   return (
     <>
